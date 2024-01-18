@@ -11,7 +11,7 @@ function Header() {
         via-gray-900/25 to-gray-900">
         <Link href="/" className="mr-10">
             <Image src="https://links.papareact.com/a943ae" alt="Disney Logo" width={120} height={100} 
-                className="cursor-pointer invert-0 dark:invert"/>
+                className="cursor-pointer invert"/>
         </Link>
 
         <div className="flex space-x-2">

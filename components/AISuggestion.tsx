@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import useSWR from "swr";
 
@@ -7,7 +7,7 @@ const fetcher = (term: string) =>
 
 function AISuggestion({ term }: { term: string }) {
   const { data, error, isLoading, isValidating } = useSWR(
-    "suggestions",
+    'suggestions',
     () => fetcher(term),
     {
       revalidateOnFocus: false,
@@ -25,7 +25,7 @@ function AISuggestion({ term }: { term: string }) {
       );
 
     if (error) return <>Error...</>;
-    if (!data) return <>No data</>;
+    if (!data) return <>No Data</>;
 
     return (
       <>
